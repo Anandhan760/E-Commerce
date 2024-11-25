@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMMERCE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">CAMERA</h2>
+        <nav class="navigation">
+          <a href="#">Home</a>
+          <a href="https://www.amazon.in/Digital-Cameras/b?node=1389175031">Shop</a>
+          <a href="#">Pages</a>
+          <a href="#">Contact</a>
+          <a href="#"><button class="btnLogin-popup">Login</button></a>
+        </nav>
+      </header>
+      <div class="container">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+        <div class="tabs">
+            <p id="lt" class="tabs" onclick="loginFunTab()">Login</p>
+            <p id="rt" class="tabs" onclick="RegTabFun()">Register</p>
+           
+
+        </div>
+        <div class="scontainer">
+            <div id="login" class="comman">
+                <h3>Login</h3>
+                <input type="email" id="se" placeholder="Enter your email">
+                <input type="password" id="sp" placeholder="Enter your password">
+                <input type="submit" onclick="login()" value="submit">
+                <p class="fp" onclick="forTabFun()">Forget Password</p>
+            </div>
+            <div id="register" class="comman">
+                <h3>Register</h3>
+                <input type="email" id="re" placeholder="Enter your email">
+                <input type="password" id="rp" placeholder="Enter your password">
+                <input type="password" id="rrp" placeholder="Re-type password">
+                <input type="submit" onclick="register()" value="submit">
+
+            </div>
+            <div id="forget" class="comman">
+                <h3>Forget Password</h3>
+                <input type="email" id="fe" placeholder="Enter your email">
+                <input type="submit" onclick="forget()" value="submit">
+  
+            </div>
+        </div>
+    </div>
+
+    <div class="listcontainer">
+      <h1>Canon EOS R6 Mark II</h1>
+      <p class="p">With exceptional professional services, Canon has long been a favorite among professional photographers, 
+        and their cameras typically feature accessible controls and intuitive menu systems, 
+        with a wide range of models to suit photographers of all experience levels.</p>
+        <a href="#"><img src="add.png" width="40px" height="40px" alt=""> <span class="s">ADD TO BAG</span></a>
+    </div>
+    <div class="icontainer">
+      <div class="icon">
+        <img src="delivery-truck.png" width="60px" height="60px" alt="">
+        <h4>Free Delivery</h4>
+      </div>
+      <div class="icon">
+        <img src="return.png" width="60px" height="60px" alt="">
+        <h4>Return Policy</h4>
+      </div>
+      <div class="icon">
+        <img src="customer-service.png" width="60px" height="60px" alt="">
+        <h4>24/7 Support</h4>
+      </div>
+      <div class="icon">
+        <img src="credit-card.png" width="60px" height="60px" alt="">
+        <h4>Secure Payment</h4>
+      </div>
+    </div>
+
+      <script src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

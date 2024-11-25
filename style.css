@@ -1,0 +1,212 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://pbblogassets.s3.amazonaws.com/uploads/2020/07/19080819/Camera-Tech-Cover-photo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background-image: url('https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=600');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: chartreuse;
+    user-select: none;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: chartreuse;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(223, 6, 6);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(93, 19, 211);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+    background: white;
+    color: green;
+}
+/*--login--*/
+.container
+{
+    position: absolute;
+    width: 450px;
+    top: 50%;
+    right: -150px;
+    transform: translate(-50%,-50%);
+    z-index: 101;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    opacity: 0;
+
+    
+   
+}
+.container.active-popup {
+    opacity: 1;
+    pointer-events: auto;
+}
+.icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: rgb(248, 244, 244);
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+ion-icon {
+    font-size: 20px;
+    color: rgb(190, 44, 44);
+}
+.tabs
+{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(212, 203, 203);
+    position: relative;
+    font-size: 20px;
+    color: orangered;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.y0DjSftbkv-vbQVHjfpOLwHaEK&pid=Api&P=0&h=180');
+}
+.scontainer
+{
+    width: 100%;
+    height: 300px;
+    border: 2px solid rgb(108, 136, 108);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/008/086/non_2x/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg');
+
+}
+input
+{
+    display: block;
+    width: 350px;
+    margin: 10px 13px;
+    padding: 10px;
+    font-size: 20px;
+    background: rgb(189, 204, 204);
+     color: rgb(221, 13, 13); 
+}
+input[type="submit"]
+{
+    width: 350px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.comman
+{
+    position: absolute;
+    visibility: hidden;
+}
+#login
+{
+    visibility: visible;
+}
+.fp
+{
+    text-decoration: underline;
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgb(224, 11, 11);
+}
+h3{
+    color: aqua;
+}
+.icontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 500px;
+    margin-right: 50px;
+    gap: 200px;
+}
+h4{
+    color: rgb(221, 13, 13);
+    text-align: center;
+
+}
+.listcontainer{
+    position: absolute;
+    margin-right: 300px;
+    padding: 180px;  
+
+}
+.p{
+    margin-left: -130px;
+    color: rgb(212, 11, 22);
+}
+h1{
+    margin-left: -130px;
+    color: rgb(37, 13, 170);
+}
+a{
+    margin-left: -130px;
+    text-decoration: none;
+    
+}
+.s{
+    color: rgb(0, 255, 64);
+   
+}
